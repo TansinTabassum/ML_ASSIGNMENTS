@@ -1,0 +1,5 @@
+pixel=[0,50,125,200,255]
+for i in range(5):
+  value=pixel[i]
+  normalized_value=value/255
+  print(normalized_value)

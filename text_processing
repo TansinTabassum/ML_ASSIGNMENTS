@@ -1,0 +1,13 @@
+text = "Machine learning is fun and powerfull!"
+
+text = text.lower()
+
+punctuations = "!.?,"
+clean_text = ""
+
+for char in text:
+    if char not in punctuations:
+        clean_text += char
+
+words = clean_text.split()
+print(words)

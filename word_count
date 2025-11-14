@@ -1,0 +1,10 @@
+labels = ["cat", "dog", "dog", "dog", "bird", "cat"]
+count = {}
+
+for label in labels:
+    if label in count:
+        count[label] += 1
+    else:
+        count[label] = 1
+
+print(count)

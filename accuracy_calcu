@@ -1,0 +1,11 @@
+actual = [1, 0, 1, 1, 0, 1]
+predicted = [1, 0, 0, 1, 0, 1]
+
+number_of_correct_predic = 0
+
+for a, p in zip(actual, predicted):
+    if a == p:
+        number_of_correct_predic += 1
+
+accuracy = (number_of_correct_predic / len(actual)) * 100
+print("accuracy:", round(accuracy, 2), "%")

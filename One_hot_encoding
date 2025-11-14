@@ -1,0 +1,18 @@
+lables=["cat","dog","dog","bird","cat"]
+new=list(set(labels))
+
+label_index={}
+index=0
+for label in new:
+    lable_index[lable]=index
+    index=index+1
+
+one_hot =[]
+for label in labels:
+    vector = [0]*len(new)
+    pos = lable_index[lable]
+    vector[pos] =1
+one_hot.append(vector)
+
+print(lable_index)
+print(one_hot)

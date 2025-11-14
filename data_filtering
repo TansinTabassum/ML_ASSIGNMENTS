@@ -1,0 +1,16 @@
+data = [("alice", 85), ("bob", 60), ("charlie", 45), ("david", 90)]
+above_70 = []
+passed = []
+failed = []
+
+for name, score in data:
+    if score > 70:
+        above_70.append(name)
+    if score >= 50:
+        passed.append(name)
+    else:
+        failed.append(name)
+
+print("students with score > 70:", above_70)
+print("pass:", passed)
+print("fail:", failed)
